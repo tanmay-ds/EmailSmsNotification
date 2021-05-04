@@ -24,6 +24,10 @@ public class Vaccination {
 	
 	private String url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=370201&date=";
 	
+	public String hello(){
+		return "Hello";
+	}
+	
 	@GetMapping("/get")
 	public List<ResponseVM> getslots(@RequestParam(value = "date")String date,@RequestParam(value = "minAge") Integer minAge) {
 		
